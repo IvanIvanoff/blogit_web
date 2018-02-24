@@ -22,7 +22,7 @@ exports.config = {
     stylesheets: {
       joinTo: "css/app.css",
       order: {
-        after: ["web/static/css/app.css"] // concat app.css last
+        after: ["lib/blogit_web/web/static/css/app.css"] // concat app.css last
       }
     },
     templates: {
@@ -41,7 +41,7 @@ exports.config = {
   paths: {
     // Dependencies and current project directories to watch
     watched: [
-      "web/static",
+      "lib/blogit_web/web/static",
       "test/static"
     ],
 
@@ -59,7 +59,7 @@ exports.config = {
 
   modules: {
     autoRequire: {
-      "js/app.js": ["web/static/js/app"]
+      "js/app.js": ["lib/blogit_web/web/static/js/app"]
     }
   },
 
